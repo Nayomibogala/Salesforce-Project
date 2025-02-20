@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="I am parent component with API Property">
+        <lightning-input type='number' label="Enter your percentage" value={percentage} onchange={handleChange}></lightning-input>
+        <c-childcpccomminication percentage={percentage}></c-childcpccomminication>
+    </lightning-card>
+</template>

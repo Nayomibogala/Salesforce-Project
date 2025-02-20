@@ -1,0 +1,11 @@
+<template>
+
+    <lightning-card title="I am parent and i am listening">
+        <div class="slds-m-around_medium">
+            <p> click on counts count{count}</p> <br/>
+            <p> {msg}</p>
+    </div>
+    <lightning-button label="clear" onclick={handleClear}></lightning-button>
+    <c-childcount onincreasecount={handleEvent} ></c-childcount>
+    </lightning-card>
+</template>

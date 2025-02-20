@@ -1,0 +1,33 @@
+<template>
+  <!-- <lightning-card title="List of Cities using for:each" icon-name="standard:account">
+       <template for:each={cities} for:item="city">
+         <p key={city}> {city}</p>
+       </template>
+    </lightning-card>
+    <lightning-card title="List of even numbers using for:each" icon-name="utility:add">
+        <template for:each={evenNumbers} for:item="en">
+            <p key={en}> {en}</p>
+        </template>
+    </lightning-card>
+    <lightning-card title="List of Cities using iterator:item" icon-name="standard:account">
+        <template iterator:it={cities}>
+          <p key={it.value}> {it.value}</p>
+        </template>
+     </lightning-card>
+     <lightning-card title="List of even numbers using iterator:item" icon-name="standard:account">
+        <template iterator:it= {evenNumbers}>
+          <p key={it.value}> {it.value}</p>
+        </template>
+     </lightning-card> -->
+     <lightning-card title="student details using for:each" icon-name="standard:account">
+        <template for:each={student} for:item="s">  
+          <p key={s.Name} > Student Name: {s.Name} </p>
+          <p key={s.Age} > Student Age: {s.Age}</p>
+            <p key={s.Sex} > Student Sex: {s.Sex}</p>
+                <p key={s.Education} > Student Education: {s.Education}</p>
+
+                ----------------
+        </template>
+     </lightning-card>
+     
+</template>

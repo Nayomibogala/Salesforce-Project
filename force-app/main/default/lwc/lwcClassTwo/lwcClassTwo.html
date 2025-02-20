@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Screen to display Greater than Value of 3 numbers" icon-name="utility:activity" >
+      <lightning-input  class="strong-text" name="fNumber" label="First Number"  value={fNumber} onchange={handleChange}></lightning-input>
+      <lightning-input class="strong-text" name="sNumber" label="Second Number" value={sNumber} onchange={handleChange}></lightning-input>
+      <lightning-input class="strong-text" name="tNumber" label="Third Number" value={tNumber} onchange={handleChange}></lightning-input>
+      <br/>
+     <lightning-button-group>
+       <lightning-button  variant="brand" label="Calculate" onclick={handleCalculate}></lightning-button>
+       <lightning-button label="Clear" onclick={handleClear}></lightning-button>
+     </lightning-button-group>
+    </lightning-card>
+</template>

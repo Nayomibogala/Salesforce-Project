@@ -1,0 +1,11 @@
+<template>
+    <p>***********Child Component***********</p>
+    <c-lwc_c_event_employeedetails ondisplayempdetails={handleEvent}></c-lwc_c_event_employeedetails>
+    <lightning-card title="Parent Component">
+        <p> Employee FirstName entered in the child Component: {efirstname}</p>
+        <p> Employee LastName entered in the child Component: {elastname}</p>
+        <p> Employee Phone entered in the child Component: {ephone}</p>
+        <p> Employee Email entered in the child Component: {eemail}</p>
+    </lightning-card>
+    <lightning-datatable   key-field="Id"   columns={col} data={emplist}></lightning-datatable>
+</template>

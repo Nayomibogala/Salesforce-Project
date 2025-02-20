@@ -1,0 +1,46 @@
+<apex:page>
+   <div>
+    <p> Enter Message Here:</p>
+    <input type="text" id="theMessage"/> <p></p>
+    <button onclick="publishMC()">Publish Msg </button><p></p>
+    <button onclick="subscribeMC()">Subscribe Msg </button><p></p>
+    <button onclick="unsubscribeMC()">Unsubscribe Msg </button><p></p>
+    <p></p>
+    <p>Received Message : </p>
+     <label id="MCMessageText"></label>
+    </div>
+      <script>
+         var SAMPLEMC='{!$MessageChannel.lmessage__c}';
+         var subscriptionToMC;
+         function publishMC()
+         {
+            const vfmessage={
+               messageToSend:document.getElementById('theMessage').value,
+               sourceSystem:'This is from VF Page',
+               mobilenumber:'6281441867'
+            }
+            sforce.one.publish(SAMPLEMC,vfmessage);
+         }
+         function displayMessage(vfmessage)
+         {
+                var textLabel=document.querySelector('#MCMessageText');
+                textLabel.innerHTML=vfmessage?JSON.stringify(vfmessage,null,'\t'):"No Message from LWC";
+         }
+         function subscribeMC()
+         {
+               if(!subscriptionToMC)
+               {
+                  subscriptionToMC=sforce.one.subscribe(SAMPLEMC,displayMessage);
+               }
+         }
+        
+         function unsubscribeMC()
+         {   
+                if(subscriptionToMC){
+                 sforce.one.unsubscribe(subscriptionToMC);
+                 subscriptionToMC=null;
+                }
+         }
+
+</script> 
+</apex:page>

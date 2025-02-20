@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Lightning Web Components" icon-name="custom:custom14">
+        <p> MessageChannel: MyMessageChannel__C</p>
+        <lightning-input type="text" label="Enter Text" value={mymessage} onchange={handleChnage} ></lightning-input>
+        <lightning-button label="Publish Msg" onclick={publishMC}></lightning-button><p></p>
+        <lightning-button label="Subscribe" onclick={subscribeMC}></lightning-button><p></p>
+        <lightning-button label="Unsubscribe" onclick={unsubscribeMC}></lightning-button><p></p>
+        <p>Message Received from VF Page: </p>
+        <lightning-formatted-text value={receivedMessage}></lightning-formatted-text>
+    </lightning-card>
+</template>

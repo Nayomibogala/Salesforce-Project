@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Simple Interest Calculator" icon-name="utility:add">
+     <lightning-input name="P" label=" Principal(P): $" value={p} onchange={handleChange} ></lightning-input>
+     <lightning-input name="R" label=" Rate(R) per Year: %" value={r} onchange={handleChange} ></lightning-input>
+     <lightning-input name="T" label=" Time(T) in years : " value={t} onchange={handleChange} ></lightning-input>
+     <lightning-input name="N" label=" No of times compund calculated (N) in years : " value={n} onchange={handleChange} ></lightning-input>
+
+     <p> Result : {Result} </p>
+     <lightning-button-group>
+        <lightning-button  name="SI" variant="brand" label="Calculate Simple Interest" onclick={handleSimpleCalculate}></lightning-button>
+        <lightning-button name="CI" variant="brand" label="Calculate Compound Interest" onclick={handleSimpleCalculate}></lightning-button>
+        <lightning-button label="Clear" onclick={handleClear}></lightning-button>
+      </lightning-button-group>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="dynamic expression using QuerySelector" icon-name="standard:account">
+              
+             <lightning-input name="fname" label="Employee Name" value={ename}></lightning-input>
+             <lightning-input name="email" label="Employee Email" value={email}></lightning-input>
+             <lightning-input name="phone" label="Employee Phone" value={phone}></lightning-input>
+           <!-- <lightning-input name="lname" label="Employee Last Name" value={elname}></lightning-input> -->
+             <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+           <br/>
+               <b>Hello !: </b>  <span style="color:rgb(45, 8, 114)"> {ename} </span> <br/>
+             <b >Your mobile number: </b> <span style="color:rgb(156, 106, 40)"> {phone}</span> <br/>
+              <b >Your Email address is : </b> <span style="color:rgb(48, 177, 80)"> {email}</span>
+          
+
+    </lightning-card>
+    
+</template>

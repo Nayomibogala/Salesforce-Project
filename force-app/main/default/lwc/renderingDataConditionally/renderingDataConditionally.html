@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Rendering Data Conditionally" icon-name="standard:account">
+       <div class="slds-box">
+        <lightning-input type="checkbox" label="Click Me" name="Clickme" onchange={handleChange}></lightning-input>
+       </div>
+       <div class="slds-var-p-around_medium">
+       <template if:true={showMe}>
+        I am Visisble
+        <br/>
+        <img src={girlUrl} alt="Girl in a jacket" width="500" height="600">
+       </template>
+       <template if:false={showMe}>
+        I am not Visisble
+       </template>
+    </div>
+     </lightning-card> 
+</template>

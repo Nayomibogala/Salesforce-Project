@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Wire a property or function">
+        <lightning-input label="Enter position search text" type="search" value={searchKey} onchange={handleChange}></lightning-input>
+        <!-- *** wire a property -->
+         <p>****wire a property*****</p>
+         <template if:true={position.data}>
+      <template for:each={position.data} for:item='pos'>
+                <p key={pos.Id}> Position Name: {pos.Name}</p>
+                <p key={pos.Id}> Position Severity: {pos.Severity__c}</p>
+                <p key={pos.Id}> Position Status: {pos.Status__c}</p>
+                <p key={pos.Id}> Position DaysOpen: {pos.Days_Open__c}</p>  
+            </template>
+         </template>
+         <template if:true={position.error}>
+            sorry we are unable to fech the data due to {position.error}
+         </template>
+         <!-- *** wire a function -->
+         <p>****wire a function*****</p>  
+         <template if:true={posList}>
+         <lightning-datatable data={posList} key-field="Id" columns={col}></lightning-datatable>
+        </template>
+        <template if:true={error}>
+            sorry we are unable to fech the data due to {error}
+        </template>
+        </lightning-card>
+</template>

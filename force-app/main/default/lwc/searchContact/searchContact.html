@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Search Contact" icon-name="standard:record">
+        <lightning-input label="Enter Search Text" type="search" value={seachKey} onchange={handleChange}></lightning-input>
+        <template if:true={contact.data}>
+            <template for:each={contact.data} for:item="con">
+                <p key={con.Id}>  Name: {con.Name}</p>
+                <p key={con.Id}>  Phone: {con.Phone}</p>
+                <p key={con.Id}>  Email: {con.Email}</p>
+            </template>
+            <lightning-datatable data={contact.data} key-field="Id" columns={col}></lightning-datatable>
+        </template>
+        <template if:true={contact.error}>
+            <p> sorry unable to give records {contact.error}</p>
+        </template>
+    </lightning-card>
+</template>

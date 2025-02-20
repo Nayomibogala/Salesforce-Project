@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Contact Table" icon-name="standard:Contact">
+        <lightning-button label="Fetch Contacts" onclick={handleFectchContacts}></lightning-button>
+        <template if:true={contacts}>
+            <lightning-datatable 
+                       key-field="Id"
+                       data={contacts}
+                       columns={coloumns}
+                       hide-checkbox-column="true">
+            </lightning-datatable>
+       </template>
+       <template if:true={error}>
+            <p> {error} </p>
+       </template>
+        </lightning-card>
+</template>

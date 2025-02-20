@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Search Lead" icon-name="standard:record">
+        <lightning-input label="Enter search text" type="search" value={searchkey} onchange={handleChange}></lightning-input>
+        <template lwc:if={lead.data}>
+           <!-- <template for:each={lead.data} for:item="lead">
+                <p key={lead.Id}>Name: {lead.Name}</p>
+                <p key={lead.Id}>Company: {lead.Company}</p>
+                <p key={lead.Id}>Email: {lead.Email}</p>
+                <p key={lead.Id}>Status: {lead.Status}</p>
+                <p key={lead.Id}>Phone: {lead.Phone}</p>
+            </template>   -->
+           <lightning-datatable data={lead.data} key-field="Id" columns={col}></lightning-datatable>
+        </template>
+        <template lwc:elseif={lead.error}>
+            Unable to fetch the seach results {lead.error}
+        </template>
+    </lightning-card>
+    
+</template>

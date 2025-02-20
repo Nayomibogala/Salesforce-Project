@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Delete Opportunity Record" icon-name="standard:record">
+        <lightning-button label="Delete Record" variant="brand" onclick={handleDelete}></lightning-button>
+        <lightning-datatable data={opportunities} key-field="Id" columns={col} max-row-selection="1" onrowselection={handleSelection}></lightning-datatable>
+    </lightning-card>
+</template>

@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="List of Contacts using for:each" icon-name="standard:account">
+    <!-- check the data is not null -->
+    <template if:true={contacts.data}>
+      <!-- loop over through the data -->
+      <template for:each={contacts.data} for:item="contact" for:index="index">
+        <!-- always provide unique value for key attribute -->
+        <p key={contact.Id} style="background:lightblue">
+         <b>   Index:  {index} </b>{contact.Id}  &nbsp;
+          {contact.Name} &nbsp;
+          {contact.Title} &nbsp;
+          </p>
+      </template>
+    </template>
+</lightning-card>
+<lightning-card title="List of Accounts using iterator:it" icon-name="standard:account">
+    <!-- check the data is not null -->
+    <ul class="slds-m-around_large">
+    <template if:true={records.data}>
+      <!-- loop over through the data -->
+      <template iterator:it={records.data} >
+        <!-- always provide unique value for key attribute -->
+        <li key={it.value.Id} style="background:rgb(86, 168, 4)">
+            <div if:true={it.first} style="background:lightblue;">
+                First item
+            </div>
+         <b> Index: {it.index}</b> {it.value.Id} &nbsp;
+          {it.value.Name} &nbsp;
+          {it.value.Industry} &nbsp;
+          {it.value.Rating}&nbsp;
+          {it.value.Type}&nbsp;
+          {it.value.Phone}&nbsp;
+           <div if:true={it.last} style="background:lightgreen;">
+            Last Item
+           </div>
+        </li>
+      </template>
+    </template>
+    </ul>
+</lightning-card>
+  </template>
+  
+  

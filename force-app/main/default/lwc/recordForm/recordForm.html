@@ -1,0 +1,20 @@
+<template>
+
+    <lightning-card title=" LWC LDS Record edit  Form">
+         <lightning-record-edit-form
+                     object-api-name={objectApiName}
+                     record-id={recordId}
+                     onsubmit={handleSubmit}
+                     onsuccess={handleSuccess}
+                    >
+                <lightning-input-field field-name={accountName} ></lightning-input-field>
+                <lightning-input-field field-name={accountPhone} ></lightning-input-field>
+                <lightning-input-field field-name={accountRating} ></lightning-input-field>
+                <lightning-input-field field-name={accountReveneue} ></lightning-input-field>
+    
+    <div class="slds-var-m-top-medium">
+        <lightning-button label="Save" variant="Brand" type="submit"></lightning-button>
+    </div>
+</lightning-record-edit-form>
+</lightning-card>
+</template>
