@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import SimpleInterestCalculator from 'c/simpleInterestCalculator';
 
 describe('c-simple-interest-calculator', () => {

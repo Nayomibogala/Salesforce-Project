@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import ContactViewForm from 'c/contactViewForm';
 
 describe('c-contact-view-form', () => {

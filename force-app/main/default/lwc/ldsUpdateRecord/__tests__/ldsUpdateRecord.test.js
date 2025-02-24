@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import LdsUpdateRecord from 'c/ldsUpdateRecord';
 
 describe('c-lds-update-record', () => {

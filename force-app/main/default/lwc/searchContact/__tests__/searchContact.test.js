@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import SearchContact from 'c/searchContact';
 
 describe('c-search-contact', () => {

@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_event_programatically from 'c/lwc_event_programatically';
 
 describe('c-lwc-event-programatically', () => {

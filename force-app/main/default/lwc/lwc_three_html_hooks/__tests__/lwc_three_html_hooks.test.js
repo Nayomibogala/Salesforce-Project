@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_three_html_hooks from 'c/lwc_three_html_hooks';
 
 describe('c-lwc-three-html-hooks', () => {

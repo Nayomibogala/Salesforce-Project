@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import GrandParent from 'c/grandParent';
 
 describe('c-grand-parent', () => {

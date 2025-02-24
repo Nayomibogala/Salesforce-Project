@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import SampleNavigationService from 'c/sampleNavigationService';
 
 describe('c-sample-navigation-service', () => {

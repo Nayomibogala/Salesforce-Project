@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Parentlisten from 'c/parentlisten';
 
 describe('c-parentlisten', () => {

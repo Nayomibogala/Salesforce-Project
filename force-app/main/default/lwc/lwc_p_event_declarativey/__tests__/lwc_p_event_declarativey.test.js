@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_p_event_declarativey from 'c/lwc_p_event_declarativey';
 
 describe('c-lwc-p-event-declarativey', () => {

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Hello World" >
+        <lightning-icon icon-name="custom:custom11" title="custom11"></lightning-icon>
+       
+        <b> Hello {greeting}</b>
+        <lightning-input label="Enter your greetings" onchange={handleChange}></lightning-input>
+        <template if:false={showMe}>
+            PLease click check box to view Praveen 
+        </template>
+        <lightning-input type='checkbox' label="View Praveen Reddy" onclick={handleClick}></lightning-input>
+        <br/>
+        <template if:true={showMe}>I am visible
+            <br/>
+            <img src={praveenImg} alt="Praveen" width="500" height="600">
+        </template>
+        
+       
+    </lightning-card> 
+</template>

@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import ContactEditform from 'c/contactEditform';
 
 describe('c-contact-editform', () => {

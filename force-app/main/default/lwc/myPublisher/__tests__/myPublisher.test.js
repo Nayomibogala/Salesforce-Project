@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import MyPublisher from 'c/myPublisher';
 
 describe('c-my-publisher', () => {

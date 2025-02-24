@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_subscriber from 'c/lwc_subscriber';
 
 describe('c-lwc-subscriber', () => {

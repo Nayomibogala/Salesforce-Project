@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import AccountDelete from 'c/accountDelete';
 
 describe('c-account-delete', () => {

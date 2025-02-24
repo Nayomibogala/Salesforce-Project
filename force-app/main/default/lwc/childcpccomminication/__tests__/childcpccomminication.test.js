@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Childcpccomminication from 'c/childcpccomminication';
 
 describe('c-childcpccomminication', () => {

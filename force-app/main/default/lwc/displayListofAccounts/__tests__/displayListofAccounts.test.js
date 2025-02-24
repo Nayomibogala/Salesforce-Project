@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import DisplayListofAccounts from 'c/displayListofAccounts';
 
 describe('c-display-listof-accounts', () => {

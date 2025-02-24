@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_p_event_employeedetails from 'c/lwc_p_event_employeedetails';
 
 describe('c-lwc-p-event-employeedetails', () => {

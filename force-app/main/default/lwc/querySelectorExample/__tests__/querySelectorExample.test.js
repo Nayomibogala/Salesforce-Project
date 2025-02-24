@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import QuerySelectorExample from 'c/querySelectorExample';
 
 describe('c-query-selector-example', () => {

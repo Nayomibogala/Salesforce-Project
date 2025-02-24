@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Childcount from 'c/childcount';
 
 describe('c-childcount', () => {

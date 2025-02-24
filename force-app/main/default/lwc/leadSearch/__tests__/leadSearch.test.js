@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import LeadSearch from 'c/leadSearch';
 
 describe('c-lead-search', () => {

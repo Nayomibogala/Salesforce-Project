@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Imperativelds from 'c/imperativelds';
 
 describe('c-imperativelds', () => {

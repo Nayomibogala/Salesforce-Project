@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import DisplayList from 'c/displayList';
 
 describe('c-display-list', () => {

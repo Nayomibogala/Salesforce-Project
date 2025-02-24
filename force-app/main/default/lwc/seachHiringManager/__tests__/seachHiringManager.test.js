@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import SeachHiringManager from 'c/seachHiringManager';
 
 describe('c-seach-hiring-manager', () => {

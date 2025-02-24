@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import DeleteOpp from 'c/deleteOpp';
 
 describe('c-delete-opp', () => {

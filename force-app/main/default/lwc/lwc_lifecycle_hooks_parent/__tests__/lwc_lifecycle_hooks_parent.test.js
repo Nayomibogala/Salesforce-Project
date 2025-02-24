@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_lifecycle_hooks_parent from 'c/lwc_lifecycle_hooks_parent';
 
 describe('c-lwc-lifecycle-hooks-parent', () => {

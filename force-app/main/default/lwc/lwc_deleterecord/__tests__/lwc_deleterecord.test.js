@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_deleterecord from 'c/lwc_deleterecord';
 
 describe('c-lwc-deleterecord', () => {

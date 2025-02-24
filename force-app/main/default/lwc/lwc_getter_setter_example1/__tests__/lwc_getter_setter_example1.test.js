@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_getter_setter_example1 from 'c/lwc_getter_setter_example1';
 
 describe('c-lwc-getter-setter-example1', () => {

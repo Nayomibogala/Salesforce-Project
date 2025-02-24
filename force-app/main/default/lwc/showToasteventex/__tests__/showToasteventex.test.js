@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import ShowToasteventex from 'c/showToasteventex';
 
 describe('c-show-toasteventex', () => {

@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import LwcClassTwo from 'c/lwcClassTwo';
 
 describe('c-lwc-class-two', () => {

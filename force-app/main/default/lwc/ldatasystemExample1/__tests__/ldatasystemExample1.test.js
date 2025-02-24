@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import LdatasystemExample1 from 'c/ldatasystemExample1';
 
 describe('c-ldatasystem-example1', () => {

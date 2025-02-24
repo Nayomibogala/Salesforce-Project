@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import ImperativeApexExample from 'c/imperativeApexExample';
 
 describe('c-imperative-apex-example', () => {

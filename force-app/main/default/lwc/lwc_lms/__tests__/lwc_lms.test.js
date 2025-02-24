@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_lms from 'c/lwc_lms';
 
 describe('c-lwc-lms', () => {

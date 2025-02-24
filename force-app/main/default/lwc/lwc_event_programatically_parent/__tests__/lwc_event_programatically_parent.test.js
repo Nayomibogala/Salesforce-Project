@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Lwc_event_programatically_parent from 'c/lwc_event_programatically_parent';
 
 describe('c-lwc-event-programatically-parent', () => {

@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Data_table_contact from 'c/data_table_contact';
 
 describe('c-data-table-contact', () => {

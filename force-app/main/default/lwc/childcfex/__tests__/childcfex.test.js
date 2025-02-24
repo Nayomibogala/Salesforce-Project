@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Childcfex from 'c/childcfex';
 
 describe('c-childcfex', () => {

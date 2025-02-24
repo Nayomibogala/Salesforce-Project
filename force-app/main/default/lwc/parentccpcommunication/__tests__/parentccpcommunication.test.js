@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import Parentccpcommunication from 'c/parentccpcommunication';
 
 describe('c-parentccpcommunication', () => {

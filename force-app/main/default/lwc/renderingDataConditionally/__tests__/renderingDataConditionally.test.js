@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import RenderingDataConditionally from 'c/renderingDataConditionally';
 
 describe('c-rendering-data-conditionally', () => {

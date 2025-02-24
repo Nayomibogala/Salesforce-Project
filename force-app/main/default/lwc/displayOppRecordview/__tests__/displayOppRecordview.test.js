@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import DisplayOppRecordview from 'c/displayOppRecordview';
 
 describe('c-display-opp-recordview', () => {

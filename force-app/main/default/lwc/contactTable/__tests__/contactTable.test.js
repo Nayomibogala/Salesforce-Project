@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import ContactTable from 'c/contactTable';
 
 describe('c-contact-table', () => {
